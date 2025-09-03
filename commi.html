@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="album.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            
+            <button class="im"></button>
+            <h2 id="letitre">COMMISSION MAINTENANCE</h2>
+
+        </div>
+        <nav>
+           <div class="menu">
+             <ul >
+                <li>
+                    <a href="commission.html" >ACCUEIL</a>
+                </li>
+                <li>
+                    <a href="membre.html">NOS MEMBRES</a>
+                </li>
+                <li>
+                    <a href="commi.html" class="active-link">ALBUM</a>
+                </li>
+                <li>
+                    <a href="formu.html">MON INSCRIPTION</a>
+                </li>
+            </ul>
+           </div>
+           
+        </nav>
+         <!-- <button>connecter vous</button> -->
+    </header>
+        <div class="ima"></div>
+</BR> <br><br><br><br>
+        <h1>J'AI RIEN RECU</h1>
+<script>
+              const menuBtn = document.querySelector('.im');
+       const menu = document.querySelector('.menu');
+if(menuBtn && menu) {
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+    menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+    });
+}
+        </script>
+</body>
+</html>

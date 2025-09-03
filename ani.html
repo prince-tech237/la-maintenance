@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @keyframes example {
+ 0%  {background-color :red;}
+ 25% {background-color :yellow; }
+ 50% {background-color :blue; }
+ 75% {background-color :green; }
+ 100% {background-color :red;}
+ }
+  /* div {
+ width : 100px;
+ height : 100px;
+ position : relative;
+ background-color : red;
+ animation-name : example;
+ animation-duration : 10s;
+ } */
+  .demo {
+ overflow : hidden;
+ background-color : blue;
+ }
+ .demo a {
+ float : left;
+ display : block;
+ color : white;
+ text-align : center;
+ padding : 10px;
+ text-decoration : none;
+ }
+@media screen and (max-width : 600px) {
+ .demo a {
+ float : none;
+ width : 100%;
+ }
+ }
+    </style>
+</head>
+<body>
+    <!-- <div>bonjour</div> -->
+<div class = "demo">
+ <a href = "#">Home</a>
+ <a href = "#">About</a>
+ <a href = "#">Tutorials</a>
+ <a href = "#">QA</a>
+ <a href = "#">Videos</a>
+ <a href = "#">Contact</a>
+ </div>
+</body>
+</html>

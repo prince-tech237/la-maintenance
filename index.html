@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<script>
+    document, addEventListener("DOMContentLoaded",()=>{
+        const title= document.querySelector("#letitre");
+        const originaltext= title.textContent;
+        title.textContent="";
+        let i=0;
+        function typeWriter(){
+            if (i<originaltext.length){title.textContent +=originaltext.charAt(i); i++;
+                setTimeout(typeWriter, 100);
+            } else{
+                setTimeout(()=>{
+                title.textContent="";
+                i=0;
+                typeWriter();
+                },5000)
+            }
+        }
+        typeWriter()
+    });
+    // document.querySelectorAll('.menu a').forEach(link => {
+    //     if (window.location.pathname.endsWith(link.getAttribute('href'))) {
+    //         link.classList.add('active-link');
+    //     } else {
+    //         link.classList.remove('active-link');
+    //     }
+    // });
+</script>
+<body> 
+    <header>
+        <div class="logo">
+            
+            <button class="im"></button>
+            <h2 id="letitre">COMMISSION MAINTENANCE</h2>
+
+        </div>
+        <nav>
+           <div class="menu">
+             <ul >
+                <li>
+                    <a href="commission.html" class="active-link">ACCUEIL</a>
+                </li>
+                <li>
+                    <a href="membre.html">NOS MEMBRES</a>
+                </li>
+                <li>
+                    <a href="commi.html">ALBUM</a>
+                </li>
+                <li>
+                    <a href="formu.html">MON INSCRIPTION</a>
+                </li>
+            </ul>
+           </div>
+           
+        </nav>
+         <!-- <button>connecter vous</button> -->
+    </header>
+    <main>
+        <div class="ima"></div>
+        <section id="bienvenue">
+            <div class="gauche">
+                <h1>BIENVENUE</h1>
+                
+                <p>Soyez les bienvenus sur le site officiel de la Commission Maintenance de l’IUT de Douala. <br>
+
+
+                La Commission Maintenance est une association dynamique d’étudiants passionnés, regroupant des membres issus de différentes filières techniques et technologiques, notamment : le Génie Informatique, le Génie Électrique et Informatique Industrielle, le Génie Réseaux et Télécommunications, ainsi que le Génie Biomédical. <br>
+
+                Notre objectif principal est de contribuer activement à la maintenance et au bon fonctionnement des équipements électriques, informatiques et techniques de notre institut. Nous intervenons régulièrement sur le terrain pour diagnostiquer, réparer, entretenir ou optimiser les installations au sein du campus, tout en respectant les normes de sécurité et de qualité. <br>
+
+                Au-delà de l’aspect technique, nous jouons également un rôle pédagogique important. Nous accompagnons nos camarades, notamment les plus jeunes, en leur apportant du soutien académique dans les matières jugées complexes. À travers des ateliers pratiques, des sessions de tutorat et des formations internes, nous encourageons le partage de connaissances et la montée en compétence de chacun.</p>
+                      <button id="ap"><a href="IMG-20250825-WA0025.jpg">APRENDRE PLUS </a></button>
+            </div>
+            <div class="droite">
+                <img src="mi.jpg" alt="">
+           
+                <div class="effets">
+                    <div class="circle">
+                        <img src="gi.jpg" alt="">
+                    </div>
+                    <div class="circle">
+                        <img src="ge.jpg" alt="">
+                    </div>
+                    
+                  
+                </div>
+            </div>
+        </section>
+
+        <section id="formations">
+            <h1>formation</h1>
+          <div class="liste">
+            <div class="formation">
+                <h2>EN INFORMATIQUE</h2>
+                <!-- Divers cours y sont dispensé tels que les cours de programmation
+                  (chtml,css,javascript,C, python...),
+                  les cours de bureautique(word, excel)
+                  ,mais egalement des cours sur des bases de donnees -->
+                <P>
+                 Divers cours y sont dispensés, notamment : 
+                 <ul id="cours">
+                 <li>des cours de programmation (HTML, CSS, JavaScript, C, Python, etc.),  </li>
+                 <li>Des cours de bureautique (Word, Excel),  </li>
+                 <li>ainsi que des initiations aux bases de données (modélisation, SQL, gestion des SGBD...).</li>
+               </ul> 
+               <p>Ces formations permettent à nos membres de renforcer leurs compétences techniques et de mieux se préparer aux exigences du monde professionnel.</p>
+
+                </P>
+                
+            </div>
+            <div class="formation">
+                <h2>EN ELECTRICITE
+
+                </h2>
+               <p> Dans ce domaines nous proposons des cours et TP sur l'electri cite generale
+                ,l'electricite batiment et tout les schemas et montage electrique necessaire a une formation de qualite</p>
+            </div>
+            <div class="formation">
+                <h2>EN ELECTRRONIQUE</h2>
+               <p> Des cours telque programmation adruino, simulation sur proteus, circuit logique et elements electronique sont dispennsé</p>
+            </div>
+            
+           </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Commission Maintenance - IUT Douala</p>
+    <p>Contact : <a href="mailto:maintenance@iutdouala.cm">maintenance@iutdouala.cm</a></p>
+    <p>
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+    </p>
+    </footer>
+
+
+    <!-- <script src="jquery-3.7.1.min.js"></script> -->
+    <script>
+        // // var men= $('.menu').html()
+        // // $('.im').html(men)
+        // $('.im').on('click', function() {
+
+        //    $(".menu").contents().appendTo(".ima")
+        // //    $(".ima").toggle(2000) 
+        //     let visible= false
+        //     // if(!visible){(".ima").animate({left:"0"}, 400);}
+        //     // else{$("ima").animate({left:"-200px"},400)}
+        //     // visible=!visible 
+        //     $(".ima").show(2000)
+        //     visible=!visible 
+
+           
+        // })
+        //  $('.im').on('click', function() {
+        //     if (!visible){
+        //     $(".ima").hide(2000)}
+
+        //  })
+        const menuBtn = document.querySelector('.im');
+       const menu = document.querySelector('.menu');
+if(menuBtn && menu) {
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+    menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+    });
+}
+    
+
+    </script>
+</body>
+</html>

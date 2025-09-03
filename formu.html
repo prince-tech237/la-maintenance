@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="f.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        body{
+            background: linear-gradient(180deg, rgba(113, 113, 240, 0.973) 70%, rgba(7, 208, 243, 0.548) 150%);
+            
+            
+        }
+        #formulaire{
+            /* rgba(113, 113, 240, 0.973) */
+            /* background-color: ; */
+            background: linear-gradient(360deg,  rgba(127, 255, 212, 0.377) , rgba(7, 208, 243, 0.548) 90%);
+
+        }
+    </style>
+</head>
+<body class="">
+
+    <header>
+        <div class="logo">
+            
+            <button class="im"></button>
+            <h3 id="letitre">COMMISSION MAINTENANCE</h3>
+
+        </div>
+        <nav>
+           <div class="menu">
+             <ul >
+                <li>
+                    <a href="commission.html">ACCUEIL</a>
+                </li>
+                <li>
+                    <a href="membre.html">NOS MEMBRES</a>
+                </li>
+                <li>
+                    <a href="commi.html">ALBUM</a>
+                </li>
+                <li>
+                    <a href="formu.html" class="active-link">MON INSCRIPTION</a>
+                </li>
+            </ul>
+           </div>
+           
+        </nav>
+         <!-- <button>connecter vous</button> -->
+    </header>
+        <div class="ima"></div>
+
+
+
+
+
+
+    <div class="row justify-content-center">
+        <!-- was-validated -->
+    <div class="col-12 col-sm-6 col-lg-4 rounded " id="form">
+
+        <form action="" class="form p-5 w  m-3" id="formulaire">
+            <div class="pb-5 text-center">
+                <h2 class="responsive" id="titre">MES INFORMATIONS</h2>
+            </div>
+            <div class=" ">
+                <label for="name" class="form-label ">NOMS:</label>
+                <input type="text" id="name" placeholder="Votre Nom" class="form-control mb-3" required>
+            </div>
+            <div class=" ">
+                <label for="surname" class="form-label ">PRENOMS:</label>
+                <input type="text" id="surname" placeholder="Votre Prenom" class="form-control mb-3" required >
+            </div>
+             <div class=" ">
+                <label for="email" class="form-label ">Email:</label>
+                <input type="email" id="email" placeholder="Votre Email" class="form-control mb-3" required>
+            </div>
+            <div class=" ">
+                <label for="phonr" class="form-label ">TELEPHONE:</label>
+                <input type="number" id="phone" placeholder="Votre Numero De TELEPHONE" class="form-control mb-3" required>
+            </div>
+             <div class=" ">
+                <label for="filliere" class="form-label ">FILIERE:</label>
+                <!-- <input type="text" id="name" placeholder="nom" class="form-control mb-3" required> -->
+                <select name="filiere" id="filiere" class="form-select ">
+                    <option value="">GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIEL</option>
+                    <option value="">GENIE INFORMATIQUE</option>
+                    <option value="">GENIE BIOMEDICAL</option>
+                    <option value="">GENIE RESEAU ET TELECOM</option>
+                </select>
+            </div>
+             <div class=" ">
+                <label for="class" class="form-label ">CLASSSE:</label>
+                <input type="text" id="class" placeholder="votre Classe" class="form-control mb-3" required>
+            </div>
+            <div class=" ">
+                <label for="bac" class="form-label ">BACCALAUREAT:</label>
+                <input type="text" id="bac" placeholder="votre Bac" class="form-control mb-3" required>
+            </div>
+             <div class=" ">
+                <label for="message" class="form-label ">MESSAGE:</label>
+               <textarea name="message" id="messagr" placeholder="quels sont vos attentes?" class="form-control" required></textarea>
+            </div>
+           
+
+
+            <button class="btn btn-success mt-2 "> valider</button>
+            
+        </form>
+    </div>
+    </div>
+
+
+
+
+
+    <script src="form.js"></script>
+</body>
+</html>
